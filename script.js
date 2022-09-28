@@ -1,6 +1,3 @@
-Alert (
-  "Success"
-)
 /* =================
   TESTS, LOOK AT THESE
   Reading tests will always help you discover your requirements.
@@ -28,6 +25,12 @@ const getHeader = document.querySelectorAll("header"),
   getIFrame = document.querySelectorAll("iframe"),
   getImage = document.querySelectorAll("img"),
   getWords = document.body.innerText;
+
+document.getElementById('button').addEventListener('click', (event) => {
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance('You owe me money. I did warn you.'));
+
+});
+
 
 var images;
 
